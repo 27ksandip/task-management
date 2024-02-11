@@ -31,10 +31,6 @@ To handle this i have used jQuery Sortable
 
 
 
-## Authors
-
-- Sandip Jha
-
 
 ## Deployment
 
@@ -44,3 +40,6 @@ To handle this i have used jQuery Sortable
 ##### 3. update .env set database name , user & if has passwor
 ##### 4. php artisan migrate:fresh --seed
 
+## Authors
+
+- Sandip Jha
