@@ -24,9 +24,10 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th scope="col">ID</th>
+                    <th scope="col">Task ID</th>
                     <th scope="col">Task Name</th>
                     <th scope="col">Project</th>
+                    <th scope="col">Created At</th>
                     <th scope="col">Control</th>
                 </tr>
             </thead>
@@ -34,8 +35,10 @@
                 @foreach($tasks as $task)
                 <tr data-task-id="{{ $task->id }}">
                     <th scope="row">#{{ $task->id }}</th>
-                    <td>{{ $task->name }}</td>
+                    <td>{{ $task->name }}
+                    </td>
                     <td style="text-transform: capitalize;">{{ $task->project->name }}</td>
+                    <td>{{ $task->created_at->diffForHumans() }}</td>
                     <td style="display: flex;">
                         <form action="{{ route('task.destroy', ['task' => $task->id]) }}" method="POST">
                             @csrf
