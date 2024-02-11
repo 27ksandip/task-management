@@ -43,3 +43,4 @@ To handle this i have used jQuery Sortable
 ## Authors
 
 - Sandip Jha
+- kumarjsandip ( Skype )
