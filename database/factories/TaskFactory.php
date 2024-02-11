@@ -18,6 +18,7 @@ class TaskFactory extends Factory
     {
         return [
             'name'  => fake()->sentence(),
+            'priority'  => fake()->randomNumber($min = 1, $max = 10)
         ];
     }
 }
